@@ -17,5 +17,15 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+	# Examples:
+    # url(r'^$', 'mysite.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.urls')),
 ]
+
+# ^ para o início do texto
+# $ para o final do texto 
+# \d para um dígito 
+# + para indicar que o item anterior deve ser repetido pelo menos uma vez 
+# () para capturar parte do padrão
